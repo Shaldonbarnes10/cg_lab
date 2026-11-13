@@ -17,7 +17,6 @@ void init(){
 
 void display()
 {
-    
     glColor3f(0, 0, 1);
 
     // Calculate x coordinates
