@@ -26,10 +26,10 @@ void display(){
     writepixel(y,x);
     writepixel(y,-x);
     writepixel(x,-y);
-writepixel(-x,-y);
-writepixel(-y,-x);
-writepixel(-y,x);
-writepixel(-x,y);
+    writepixel(-x,-y);
+    writepixel(-y,-x);
+    writepixel(-y,x);
+    writepixel(-x,y);
 
     while (y>x){
         if (d<0){
