@@ -9,7 +9,7 @@ void init()
     glClearColor(1,1,1,1);
     glClear(GL_COLOR_BUFFER_BIT);
     glMatrixMode(GL_PROJECTION);
-    gluOrtho2D(-500,500,-500,500);
+    gluOrtho2D(0,10,0,10);
 }
 
 void writepixel(int x,int y)
@@ -24,8 +24,6 @@ void writepixel(int x,int y)
 
 void display()
 {
-    int i,j;
-
     float dx=x1-x0 , dy = y1-y0;
     float d = 2*dy-dx;
 
@@ -70,3 +68,6 @@ int main(int argc,char *argv[])
     glutMainLoop();
     return 0;
 }
+
+
+//input to be given: 1 1 8 6

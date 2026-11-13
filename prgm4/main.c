@@ -31,7 +31,7 @@ void edgedetect(float x1, float y1, float x2, float y2, int le[], int re[])
     {
         if(x1 < le[i]) le[i] = (int)x1;
         if(x1 > re[i]) re[i] = (int)x1;
-
+        
         x1 += mx;
     }
 }

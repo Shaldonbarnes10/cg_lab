@@ -5,7 +5,7 @@
 float house[2][9] = {
     // {100,100,175,250,250,150,150,200,200},
     // {100,300,400,300,100,100,150,150,100}
-    {100,100,250,400,400,200,200,300,300},{100,300,400,300,100,100,150,150,100}
+    {100,100,200,400,400,200,200,300,300},{100,300,400,300,100,100,200,200,100}
 };
 
 float angle;
@@ -14,6 +14,7 @@ float h = 100, k = 100;
 void init()
 {
     glClearColor(1,1,1,1);
+    glClear(GL_COLOR_BUFFER_BIT);
     glMatrixMode(GL_PROJECTION);
     gluOrtho2D(0,499,0,499);
 }
@@ -48,8 +49,6 @@ void drawHouse()
 
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
-
     // Original house
     drawHouse();
 
@@ -70,7 +69,6 @@ int main(int argc,char **argv)
     scanf("%f",&angle);
 
     glutInit(&argc,argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(1000,1000);  //can be (500,500) also
     glutCreateWindow("House Rotation");
 

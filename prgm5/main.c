@@ -1,4 +1,3 @@
-
 #include <GLUT/glut.h>
 #include <stdio.h>
 

@@ -31,7 +31,7 @@ void display(){
     writepixel(-y,x);
     writepixel(-x,y);
 
-    while (y>x){
+    while (x<y){
         if (d<0){
             d = d+2.0*x+3.0;
         }else{
